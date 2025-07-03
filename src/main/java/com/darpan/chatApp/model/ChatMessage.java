@@ -1,12 +1,16 @@
 package com.darpan.chatApp.model;
 
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
-@Data
+
+import java.awt.*;
+@Getter
+@Setter
+@AllArgsConstructor
 @NoArgsConstructor
+@Builder
 public class ChatMessage {
-    private Integer id;
-    private String sender;
     private String content;
+    private String sender;
+    private MessageType type;
 }
